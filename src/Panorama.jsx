@@ -25,7 +25,7 @@ const customArrow = (hotSpotDiv, args = {}) => {
   
   hotSpotDiv.innerHTML = `
      <div style="
-    transform: scale(3) translateX(-9px) rotateX(60deg) rotate(${rotation}deg);
+    transform: scale(3.7) translateX(-9px) rotateX(60deg) rotate(${rotation}deg);
     width: 70px; height: 70px;
     transform-origin: center center;
     perspective: 800px;
@@ -71,6 +71,7 @@ const customArrow = (hotSpotDiv, args = {}) => {
               {
                 type: 'equirectangular',
                 panorama: val.image,
+                hfov: 150,
                 hotSpots: val.hotspots.map(h => ({
                 pitch: h.pitch,
                 yaw: h.yaw,
