@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function App() {
 
-  const [currentScene, setCurrentScene] = useState('oval_exit');
+  const [currentScene, setCurrentScene] = useState('old_admin_blg_road6');
 
   return (
     <div className="flex flex-col  items-center">

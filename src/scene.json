@@ -366,7 +366,7 @@
         {
         "pitch": -25,
         "yaw": 130,
-        "target": "main_gate",
+        "target": "old_admin_blg_road7",
         "rotation": -20
       },
         {
@@ -829,7 +829,7 @@
       {
         "pitch": -20,
         "yaw": 40,
-        "target": "oval_exit"
+        "target": "oval_exit3"
       },
         {
         "pitch": -40,
@@ -841,6 +841,118 @@
         "pitch": -40,
         "yaw": 40,
         "target": "oval_exit" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+      "oval_exit3": {
+    "image": "public/IMG_5765.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": 40,
+        "target": "oval_exit4"
+      },
+        {
+        "pitch": -40,
+        "yaw": -60,
+        "target": "oval_exit",
+        "rotation": -90
+      },
+        {
+        "pitch": -40,
+        "yaw": 40,
+        "target": "oval_exit2" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+      "oval_exit4": {
+    "image": "public/IMG_5766.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": -50,
+        "target": "oval_exit5"
+      },
+        {
+        "pitch": -20,
+        "yaw": -110,
+        "target": "oval_exit5",
+        "rotation": -90
+      },
+      
+        {
+        "pitch": -40,
+        "yaw": -50,
+        "target": "oval_exit3" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+
+       "oval_exit5": {
+    "image": "public/IMG_5769.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": -90,
+        "target": "oval_exit6"
+      },
+        {
+        "pitch": -20,
+        "yaw": 80,
+        "target": "oval_exit5",
+        "rotation": 90
+      },
+      
+        {
+        "pitch": -40,
+        "yaw": -90,
+        "target": "oval_exit4" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+       "oval_exit6": {
+    "image": "public/IMG_5771.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": -40,
+        "target": "oval_exit7"
+      },
+        {
+        "pitch": -40,
+        "yaw": -40,
+        "target": "oval_exit5" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+        "oval_exit7": {
+    "image": "public/IMG_5772.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": -60,
+        "target": "main_gate"
+      },
+       {
+        "pitch": -20,
+        "yaw": -120,
+        "target": "main_gate",
+        "rotation": -90
+      },
+        {
+        "pitch": -40,
+        "yaw": -60,
+        "target": "oval_exit6" ,
          "arrowType": "backward",  
           "rotation": 180  
       }
