@@ -1,0 +1,177 @@
+{
+  "main_gate": {
+    "image": "public/IMG_5703.jpg",
+    "hotspots": [
+      {
+        "pitch": -20.5,
+        "yaw": 120,
+        "target": "laundry"
+      },
+
+       {
+        "pitch": -25.5,
+        "yaw": -110,
+        "target": "laundry",
+        "rotation": 50
+      }
+    ]
+  },
+  "laundry": {
+    "image": "public/IMG_5704.jpg",
+    "hotspots": [
+      {
+        "pitch": -14,
+        "yaw": 22,
+        "target": "four",
+        "arrowType": "forward"
+
+          },
+           {
+        "pitch": -30,
+        "yaw": 22,
+        "target": "main_gate",
+        "arrowType": "backward",
+        "rotation" : 180
+
+          }
+    ]
+  },
+
+    "four": {
+    "image": "public/IMG_5706.jpg",
+    "hotspots": [
+      {
+        "pitch": -14,
+        "yaw": 10,
+        "target": "errc_blg"
+      },
+          {
+        "pitch": -40,
+        "yaw": 10,
+        "target": "laundry",
+        "arrowType": "backward",  
+      "rotation": 180  
+      }
+    ]
+  },
+      "errc_blg": {
+    "image": "public/IMG_5707.jpg",
+    "hotspots": [
+      {
+        "pitch": -14,
+        "yaw": 40,
+        "target": "fountaion_park1"
+      },
+        {
+        "pitch": -30,
+        "yaw": 40,
+        "target": "four" ,
+         "arrowType": "backward",  
+      "rotation": 180  
+      }
+    ]
+  },
+    "fountaion_park1": {
+    "image": "public/IMG_5708.jpg",
+    "hotspots": [
+      {
+        "pitch": -14,
+        "yaw": 17,
+        "target": "fountaion_park2"
+      },
+        {
+        "pitch": -30,
+        "yaw": 17,
+        "target": "errc_blg" ,
+         "arrowType": "backward",  
+      "rotation": 180  
+      }
+    ]
+  },
+   "fountaion_park2": {
+    "image": "public/IMG_5709.jpg",
+    "hotspots": [
+      {
+        "pitch": -14,
+        "yaw": 17,
+        "target": "fountaion_park3"
+      },
+        {
+        "pitch": -40,
+        "yaw": 17,
+        "target": "fountaion_park1" ,
+         "arrowType": "backward",  
+      "rotation": 180  
+      }
+    ]
+  },
+
+     "fountaion_park3": {
+    "image": "public/IMG_5710.jpg",
+    "hotspots": [
+      {
+        "pitch": -14,
+        "yaw": -20,
+        "target": "fountaion_park4"
+      },
+        {
+        "pitch": -40,
+        "yaw": -20,
+        "target": "fountaion_park2" ,
+         "arrowType": "backward",  
+      "rotation": 180  
+      }
+    ]
+  },
+       "fountaion_park4": {
+    "image": "public/IMG_5712.jpg",
+    "hotspots": [
+      {
+        "pitch": -14,
+        "yaw": -40,
+        "target": "old_admin_1stF",
+        "rotation" : 30
+      },
+          {
+        "pitch": -14,
+        "yaw": -120,
+        "target": "main_gate",
+        "rotation" : 10
+      },
+        {
+        "pitch": -40,
+        "yaw": 11,
+        "target": "fountaion_park3" ,
+         "arrowType": "backward",  
+      "rotation": 180  
+      },
+         {
+        "pitch": -14,
+        "yaw": 10,
+        "target": "main_gate"
+      }
+    ]
+  },
+
+     "old_admin_1stF": {
+    "image": "public/IMG_5713.jpg",
+    "hotspots": [
+      {
+        "pitch": -14,
+        "yaw": 19,
+        "target": "main_gate",
+        "rotation" : 20
+      },
+        {
+        "pitch": -40,
+        "yaw": 10,
+        "target": "fountaion_park4" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  }
+
+
+}
+

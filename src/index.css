@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Customize the default hotspot arrow */
+.pnlm-hotspot-base.pnlm-scene {
+  width: 40px;
+  height: 40px;
+  background-image: url('/custom-arrow.png'); /* ✅ Replace with your arrow */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none !important;
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.pnlm-hotspot-base.pnlm-scene:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
