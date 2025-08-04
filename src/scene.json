@@ -159,7 +159,7 @@
       {
         "pitch": -14,
         "yaw": 19,
-        "target": "main_gate",
+        "target": "old_admin_1stF2",
         "rotation" : 20
       },
         {
@@ -170,7 +170,216 @@
           "rotation": 180  
       }
     ]
+  },
+    "old_admin_1stF2": {
+    "image": "public/IMG_5716.jpg",
+    "hotspots": [
+      {
+        "pitch": -10,
+        "yaw": 98,
+        "target": "old_admin_1stF3"
+      },
+        {
+        "pitch": -35,
+        "yaw": 98,
+        "target": "old_admin_1stF" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+      "old_admin_1stF3": {
+    "image": "public/IMG_5717.jpg",
+    "hotspots": [
+      {
+        "pitch": -10,
+        "yaw": 25,
+        "target": "old_admin_1stF4"
+      },
+        {
+        "pitch": -35,
+        "yaw": 25,
+        "target": "old_admin_1stF2" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+        "old_admin_1stF4": {
+    "image": "public/IMG_5718.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": 120,
+        "target": "old_admin_1stF5"
+      },
+        {
+        "pitch": -40,
+        "yaw": 120,
+        "target": "old_admin_1stF3" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+          "old_admin_1stF5": {
+    "image": "public/IMG_5719.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": 90,
+        "target": "old_admin_1stF6"
+      },
+        {
+        "pitch": -40,
+        "yaw": 90,
+        "target": "old_admin_1stF4" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+            "old_admin_1stF6": {
+    "image": "public/IMG_5720.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": 30,
+        "target": "old_admin_1stF7"
+      },
+        {
+        "pitch": -40,
+        "yaw": 30,
+        "target": "old_admin_1stF5" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+
+     "old_admin_1stF7": {
+    "image": "public/IMG_5721.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": -100,
+        "target": "main_gate",
+        "rotation": -30
+      },
+        {
+        "pitch": -20,
+        "yaw": 50,
+        "target": "old_admin_1stF8",
+        "rotation" : 20
+      },
+        {
+        "pitch": -40,
+        "yaw": 50,
+        "target": "old_admin_1stF6" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+
+    "old_admin_1stF8": {
+    "image": "public/IMG_5722.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": 20,
+        "target": "old_admin_1stF9"
+      },
+        {
+        "pitch": -40,
+        "yaw": 20,
+        "target": "old_admin_1stF7" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+
+      "old_admin_1stF9": {
+    "image": "public/IMG_5723.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": 20,
+        "target": "old_admin_1stF10"
+      },
+        {
+        "pitch": -40,
+        "yaw": 20,
+        "target": "old_admin_1stF8" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+
+        "old_admin_1stF10": {
+    "image": "public/IMG_5724.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": 20,
+        "target": "old_admin_1stF11"
+      },
+        {
+        "pitch": -40,
+        "yaw": 20,
+        "target": "old_admin_1stF9" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+  
+        "old_admin_1stF11": {
+    "image": "public/IMG_5724.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": 20,
+        "target": "old_admin_1stF12"
+      },
+        {
+        "pitch": -40,
+        "yaw": 20,
+        "target": "old_admin_1stF10" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
+  },
+  
+        "old_admin_1stF12": {
+    "image": "public/IMG_5727.jpg",
+    "hotspots": [
+      {
+        "pitch": -20,
+        "yaw": -60,
+        "target": "main_gate"
+      },
+
+        {
+        "pitch": -25,
+        "yaw": 130,
+        "target": "main_gate",
+        "rotation": -20
+      },
+        {
+        "pitch": -50,
+        "yaw": 30,
+        "target": "old_admin_1stF8" ,
+         "arrowType": "backward",  
+          "rotation": 180  
+      }
+    ]
   }
+
+  
 
 
 }

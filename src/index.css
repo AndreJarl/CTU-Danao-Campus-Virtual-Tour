@@ -13,9 +13,10 @@
   border: none !important;
   transform: scale(1.2);
   transition: transform 0.3s ease;
+  z-index: 50;
 }
 
 .pnlm-hotspot-base.pnlm-scene:hover {
-  transform: scale(1.4);
   cursor: pointer;
 }
+

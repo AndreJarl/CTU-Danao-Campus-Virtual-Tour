@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function App() {
 
-  const [currentScene, setCurrentScene] = useState('old_admin_1stF');
+  const [currentScene, setCurrentScene] = useState('fountaion_park4');
 
   return (
     <div className="flex flex-col items-center">

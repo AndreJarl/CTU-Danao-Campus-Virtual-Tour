@@ -11,6 +11,8 @@ function Panorama({ scene, onChangeScene }) {
 const customArrow = (hotSpotDiv, args = {}) => {
   let rotation = args.rotation || 0;
 
+
+
   // Optional: Allow using 'arrowType' to determine rotation
   if (args.arrowType) {
     if (args.arrowType === "backward") rotation = 180;
@@ -19,9 +21,11 @@ const customArrow = (hotSpotDiv, args = {}) => {
     if (args.arrowType === "forward") rotation = 0;
   }
 
+
+  
   hotSpotDiv.innerHTML = `
      <div style="
-    transform: scale(4.5) rotateX(60deg) rotate(${rotation}deg);
+    transform: scale(3) translateX(-9px) rotateX(60deg) rotate(${rotation}deg);
     width: 70px; height: 70px;
     transform-origin: center center;
     perspective: 800px;
@@ -37,6 +41,7 @@ const customArrow = (hotSpotDiv, args = {}) => {
     </div>
     <div style="text-align: center; color: white; margin-top: 4px;">${args.label || ''}</div>
   `;
+
 
   hotSpotDiv.style.cursor = 'pointer';
   hotSpotDiv.addEventListener('click', () => {
