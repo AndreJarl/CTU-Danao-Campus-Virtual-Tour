@@ -69,7 +69,6 @@ const customArrow = (hotSpotDiv, args = {}) => {
             mouseZoom: true,           
             keyboardZoom: true, 
              showControls: false,
-               compass: true
           },
           scenes: Object.fromEntries(
             Object.entries(scenes).map(([key, val]) => [
@@ -136,27 +135,27 @@ return (
       <div ref={viewerRef} className="w-full h-full" />
 
       {/* Controls in lower-left corner */}
-      <div className="absolute bottom-4 left-4 flex flex-col gap-2 z-50">
+      <div className="absolute top-4 right-96 flex flex-row  gap-2 z-50">
         <button
-          className="w-10 py-2 font-bold flex justify-center items-center bg-white shadow-2xl shadow-gray-800 rounded-md "
+          className="w-10 py-2 font-bold flex justify-center items-center bg-black shadow-2xl shadow-gray-800 rounded-full "
                    
           onClick={zoomIn}
         >
-          <Plus color='black'/>
+          <Plus color='white'/>
         </button>
         <button
-          className="w-10 py-2 font-bold flex justify-center items-center bg-white shadow-2xl
-                    shadow-gray-800 rounded-md "
+          className="w-10 py-2 font-bold flex justify-center items-center bg-black shadow-2xl
+                    shadow-gray-800 rounded-full "
           onClick={zoomOut}
         >
-          <Minus color='black' />
+          <Minus color='white' />
         </button>
         <button
-          className="w-10 py-2 font-bold flex justify-center items-center  bg-white shadow-2xl
-                   shadow-gray-800 rounded-md "
+          className="w-10 py-2 font-bold flex justify-center items-center  bg-black shadow-2xl
+                   shadow-gray-800 rounded-full "
           onClick={toggleFullscreen}
         >
-          <Maximize color='black'/>
+          <Maximize color='white'/>
         </button>
       </div>
     </div>
