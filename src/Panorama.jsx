@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import 'pannellum/build/pannellum.css';
 import scenes from './scene.json';
 import './index.css';
+import { Plus, Minus, Maximize} from 'lucide-react';
 
 function Panorama({ scene, onChangeScene }) {
   const viewerRef = useRef(null);
@@ -64,6 +65,11 @@ const customArrow = (hotSpotDiv, args = {}) => {
           default: {
             firstScene: scene,
             sceneFadeDuration: 1000,
+            autoLoad: true,
+            mouseZoom: true,           
+            keyboardZoom: true, 
+             showControls: false,
+               compass: true
           },
           scenes: Object.fromEntries(
             Object.entries(scenes).map(([key, val]) => [
@@ -103,7 +109,61 @@ const customArrow = (hotSpotDiv, args = {}) => {
     }
   }, [scene]);
 
-  return <div ref={viewerRef} style={{ width: '100%', height: '100vh' }} />;
-}
+      // 🔘 Zoom control functions
+  const zoomIn = () => {
+    if (viewerInstance.current) {
+      const current = viewerInstance.current.getHfov();
+      viewerInstance.current.setHfov(current - 10);
+    }
+  };
 
+  const zoomOut = () => {
+    if (viewerInstance.current) {
+      const current = viewerInstance.current.getHfov();
+      viewerInstance.current.setHfov(current + 10);
+    }
+  };
+
+  const toggleFullscreen = () => {
+    if (viewerInstance.current) {
+      viewerInstance.current.toggleFullscreen();
+    }
+  };
+
+return (
+  <>
+    <div className="relative w-full h-screen">
+      <div ref={viewerRef} className="w-full h-full" />
+
+      {/* Controls in lower-left corner */}
+      <div className="absolute bottom-4 left-4 flex flex-col gap-2 z-50">
+        <button
+          className="w-10 py-2 font-bold flex justify-center items-center bg-white shadow-2xl shadow-gray-800 rounded-md "
+                   
+          onClick={zoomIn}
+        >
+          <Plus color='black'/>
+        </button>
+        <button
+          className="w-10 py-2 font-bold flex justify-center items-center bg-white shadow-2xl
+                    shadow-gray-800 rounded-md "
+          onClick={zoomOut}
+        >
+          <Minus color='black' />
+        </button>
+        <button
+          className="w-10 py-2 font-bold flex justify-center items-center  bg-white shadow-2xl
+                   shadow-gray-800 rounded-md "
+          onClick={toggleFullscreen}
+        >
+          <Maximize color='black'/>
+        </button>
+      </div>
+    </div>
+  </>
+);
+
+
+
+}
 export default Panorama;

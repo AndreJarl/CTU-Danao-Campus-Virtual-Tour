@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lucide-react": "^0.536.0",
     "pannellum": "^2.5.6",
     "photo-sphere-viewer": "^4.8.1",
     "react": "^19.1.0",
