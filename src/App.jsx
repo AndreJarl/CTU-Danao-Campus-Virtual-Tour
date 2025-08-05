@@ -11,7 +11,7 @@ function App() {
     const [currentScene, setCurrentScene] = useState('main_gate');
 
   return (
-     <div className="relative w-full h-screen">
+     <div className="relative w-full h-screen z-50">
            {/* Navbar overlayed on top, absolute position */}
       <div className="absolute top-3 right-3 w-[350px] bg-black flex justify-center shadow-2xl shadow-black  h-12 rounded-full p-1 items-center text-white z-50">
         <Navbar setCurrentScene={setCurrentScene} />
@@ -27,7 +27,7 @@ function App() {
         </div>
 
         <div className='text-[10px]'>
-            <p>Shot on iPhone</p>
+            <p>Shot on iPhone (panorama)</p>
         </div>
 
       </div>

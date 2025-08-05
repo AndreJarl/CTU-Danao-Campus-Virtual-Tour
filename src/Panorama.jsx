@@ -112,14 +112,14 @@ const customArrow = (hotSpotDiv, args = {}) => {
   const zoomIn = () => {
     if (viewerInstance.current) {
       const current = viewerInstance.current.getHfov();
-      viewerInstance.current.setHfov(current - 10);
+      viewerInstance.current.setHfov(current - 30);
     }
   };
 
   const zoomOut = () => {
     if (viewerInstance.current) {
       const current = viewerInstance.current.getHfov();
-      viewerInstance.current.setHfov(current + 10);
+      viewerInstance.current.setHfov(current + 30);
     }
   };
 
@@ -150,13 +150,7 @@ return (
         >
           <Minus color='white' />
         </button>
-        <button
-          className="w-10 py-2 font-bold flex justify-center items-center  bg-black shadow-2xl
-                   shadow-gray-800 rounded-full "
-          onClick={toggleFullscreen}
-        >
-          <Maximize color='white'/>
-        </button>
+  
       </div>
     </div>
   </>
