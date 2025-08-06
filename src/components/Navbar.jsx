@@ -39,11 +39,13 @@ function Navbar({setCurrentScene}) {
 
 
   return (
-    <div className='flex gap-2'> 
-        <Search />
-        <input onChange={handleInput} className='bg-black w-[250px] outline-none ' placeholder='Search location/place' type="text" />
-         <ChevronDown />
-    </div>
+      <div className="absolute top-3 right-3 w-[350px] bg-black flex justify-center shadow-2xl shadow-black  h-12 rounded-full p-1 items-center text-white z-50">
+        <div className='flex gap-2'> 
+            <Search />
+            <input onChange={handleInput} className='bg-black w-[250px] outline-none ' placeholder='Search location/place' type="text" />
+            <ChevronDown />
+        </div>
+      </div>
   )
 }
 
