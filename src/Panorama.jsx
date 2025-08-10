@@ -135,7 +135,7 @@ return (
       <div ref={viewerRef} className="w-full h-full" />
 
       {/* Controls in lower-left corner */}
-      <div className="absolute top-4 right-96 flex flex-row  gap-2 z-50">
+      <div className="absolute bottom-8 left-5 flex flex-row  gap-2 z-50">
         <button
           className="w-10 py-2 font-bold flex justify-center items-center bg-black shadow-2xl shadow-gray-800 rounded-full "
                    
