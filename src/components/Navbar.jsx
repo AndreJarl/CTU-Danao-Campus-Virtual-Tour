@@ -57,16 +57,19 @@ const clicked = () => {
   
       <>
 
-          <div className="absolute top-3 right-10 w-[350px] bg-white flex justify-center shadow-2xl shadow-black  h-12 rounded-full p-1 items-center  text-black z-50">
+          <div className="absolute top-3 right-10 w-[350px] bg-white flex flex-col justify-center shadow-2xl shadow-black  h-12 rounded-full p-1 items-center  text-black z-50">
         <div className='flex gap-2'> 
             <Search color='black' onClick={clicked}/>
             <input onChange={handleInput} className='bg-white w-[250px] outline-none ' placeholder='Search location/place' type="text" />
             <ChevronDown color='black'  />
         </div>
-      </div>
+     
+
+        </div>
+           <div className={`absolute top-10 right-10 h-[60vh] bg-white w-[350px] ${query && query.length > 0 ? 'block' : 'hidden'} z-40`}> </div>
                 <button className={`absolute top-[45%] right-0 ${arrowClicked ? 'hidden' : 'block' } rounded-l-xl  text-8xl text-white  z-20`}><FaCaretLeft onClick={()=>setArrowClicked(!arrowClicked)} /></button>
 
-      <div className={`absolute overflow-x-hidden ${arrowClicked ? 'block' : 'hidden' } flex justify-center items-center top-0 pt-16 z-40 right-10 pr-  h-[99vh] w-[400px]  `} >
+      <div className={`absolute overflow-x-hidden ${arrowClicked ? 'block' : 'hidden' } flex justify-center items-center top-0 pt-16 z-30 right-10 pr-  h-[99vh] w-[400px]  `} >
          <div className='flex flex-row items-center  '>
            <button className={` rounded-l-xl  text-8xl text-white  z-20`}><FaCaretLeft onClick={()=>setArrowClicked(!arrowClicked)} /></button>
             <div className='flex flex-col gap-6 items-center  overflow-y-scroll h-[80vh]'>
