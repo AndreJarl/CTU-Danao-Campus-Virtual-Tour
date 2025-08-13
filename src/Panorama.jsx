@@ -137,14 +137,14 @@ return (
       {/* Controls in lower-left corner */}
       <div className="absolute bottom-8 left-5 flex flex-row  gap-2 z-50">
         <button
-          className="w-10 py-2 font-bold flex justify-center items-center bg-black shadow-2xl shadow-gray-800 rounded-full "
+          className="w-10 py-2 font-bold flex justify-center items-center bg-black/80 shadow-2xl shadow-gray-800 rounded-full "
                    
           onClick={zoomIn}
         >
           <Plus color='white'/>
         </button>
         <button
-          className="w-10 py-2 font-bold flex justify-center items-center bg-black shadow-2xl
+          className="w-10 py-2 font-bold flex justify-center items-center bg-black/80 shadow-2xl
                     shadow-gray-800 rounded-full "
           onClick={zoomOut}
         >
