@@ -1,5 +1,5 @@
 import React from 'react'
-import { Search, ChevronDown  } from 'lucide-react';
+import { Search, ChevronDown , ChevronUp } from 'lucide-react';
 import scene from "../scene.json";
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight, AlignJustify } from 'lucide-react';
@@ -58,11 +58,11 @@ const clicked = () => {
   
       <>
 
-          <div className={`absolute top-3 right-10 w-[350px] bg-white flex flex-col justify-center ${suggestion.length > 0 ? 'shadow-none' : 'shadow-2xl'} shadow-black  h-12 rounded-full p-1 items-center  text-black z-50`}>
-        <div className='flex gap-2'> 
+          <div className={`absolute top-5 right-10 w-[350px] bg-white flex flex-col justify-center ${suggestion.length > 0 ? 'shadow-none' : 'shadow-2xl'} shadow-black  h-12 rounded-full p-1 items-center  text-black z-50`}>
+        <div className='flex items-center gap-2'> 
             <Search color='black' onClick={clicked}/>
             <input onChange={handleInput} className='bg-white w-[250px] outline-none ' placeholder='Search location/place' type="search" />
-            <ChevronDown color='black'  />
+            <p  onClick={()=>setArrowClicked(!arrowClicked)}>{arrowClicked ? <ChevronUp  color='black' size={30}  />: <ChevronDown color='black' size={30} />}</p>
         </div>
      
 
@@ -78,7 +78,7 @@ const clicked = () => {
            </div>
 
 
-                <button className={`absolute top-[45%] right-0 ${arrowClicked ? 'hidden' : 'block' } rounded-l-xl  text-8xl text-white  z-20`}><FaCaretLeft onClick={()=>setArrowClicked(!arrowClicked)} /></button>
+              
 
       <div className={`absolute overflow-x-hidden ${arrowClicked ? 'block' : 'hidden' } flex justify-center items-center top-0 pt-16 z-30 right-10 pr-  h-[99vh] w-[400px]  `} >
          <div className='flex flex-row items-center  '>

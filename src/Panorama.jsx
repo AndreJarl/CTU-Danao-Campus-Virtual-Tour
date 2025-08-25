@@ -160,3 +160,4 @@ return (
 
 }
 export default Panorama;
+
