@@ -1,11 +1,39 @@
 import Panorama from "./Panorama";
 import 'pannellum/build/pannellum.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import { db } from "././config/firebase.js"; // your firebase.js
+import { collection, addDoc, getDocs } from "firebase/firestore";
 
 function App() {
+
+
+   useEffect(() => {
+    async function testFirebase() {
+      try {
+        // Test write
+        const docRef = await addDoc(collection(db, "testCollection"), {
+          message: "Hello Firebase!",
+          timestamp: new Date(),
+        });
+        console.log("✅ Document written with ID:", docRef.id);
+
+        // Test read
+        const querySnapshot = await getDocs(collection(db, "testCollection"));
+        querySnapshot.forEach((doc) => {
+          console.log("📄 Data:", doc.id, doc.data());
+        });
+
+        console.log("🎉 Firebase is connected and working!");
+      } catch (error) {
+        console.error("❌ Firebase test failed:", error);
+      }
+    }
+
+    testFirebase();
+  }, []);
+
 
     const [currentScene, setCurrentScene] = useState('main_gate');
 
